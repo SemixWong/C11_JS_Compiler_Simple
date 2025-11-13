@@ -106,8 +106,10 @@ Write-Host ""
 
 if ($failedTests -eq 0) {
     Write-Host "[SUCCESS] All tests passed!" -ForegroundColor Green
+    Read-Host "Press any key to exit ..."
     exit 0
 } else {
     Write-Host "[WARNING] $failedTests test(s) failed" -ForegroundColor Yellow
+    Read-Host "Press any key to exit ..."
     exit 1
 }
